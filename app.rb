@@ -25,7 +25,7 @@ class App < Sinatra::Base
 
 # A dynamic route starting with /multiply that accepts two params (num1 and num2) and
 # returns the product of the two numbers.
-  get '/multiply/:num1/:num2' do
+  get '/multiply/' do
     num1 = params[:num1].to_i
     num2 = params[:num2].to_i
     product = num1 * num2
